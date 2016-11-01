@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Registration form</title>
+    </head>
+    <body>
+        <h1>Registration form</h1>
+        <form action="/" method="POST">
+            <fieldset>
+                <legend>User name and password</legend>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td align="right">
+                                <label for="userName">User name:</label>
+                            </td>
+                            <td>
+                                <input id="userName" name="user_name" type="text" required maxlength="20">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                <label for="userPassword">User password:</label>
+                            </td>
+                            <td>
+                                <input id="userPassword" name="user_password" type="password" required>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Personal data</legend>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td align="right">
+                                <label for="userFirstName">First Name:</label>
+                            </td>
+                            <td>
+                                <input id="userFirstName" name="user_first_name" type="text" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                <label for="userLastName">Last name:</label>
+                            </td>
+                            <td>
+                                <input id="userLastName" name="user_last_name" type="text" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                <label for="userEmail">Email:</label>
+                            </td>
+                            <td>
+                                <input id="userEmail" name="user_email" type="email" placeholder="user@email.com" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                <label for="userPhoneNumber">Phone number:</label>
+                            </td>
+                            <td>
+                                <input id="userPhoneNumber" name="user_phone_number" type="number" placeholder="234123243" required>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Billing address</legend>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td align="right">
+                                <label for="billingCountry">Country:</label>
+                            </td>
+                            <td>
+                                <input list="countries" name="billing_country">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                <label for="billingCity">City:</label>
+                            </td>
+                            <td>
+                                <input id="billingCity" name="billing_city" type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                <label for="billingAddress">Address:</label>
+                            </td>
+                            <td>
+                                <textarea id="billingAddress" name="billing_Address" cols="120" rows="3" placeholder="zip-code, District, Street, House, apt"></textarea>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Shipping address</legend>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td align="right">
+                                <label for="shippingCountry">Country:</label>
+                            </td>
+                            <td>
+                                <input list="countries" name="shipping_country">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                <label for="shippingCity">City:</label>
+                            </td>
+                            <td>
+                                <input id="shippingCity" name="shipping_city" type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                <label for="shippingAddress">Address:</label>
+                            </td>
+                            <td>
+                                <textarea id="shippingAddress" name="shipping_Address" cols="120" rows="3" placeholder="zip-code, District, Street, House, apt"></textarea>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            <table>
+                <tr>
+                    <td>
+                        <input type="submit" value="Register">
+                    </td>
+                    <td>
+                        <input type="reset" value="Clear">
+                    </td>
+                </tr>
+            </table>
+            <datalist id="countries">
+                <option value="United Kingdom">
+                <option value="Australia">
+                <option value="New Zealand">
+            </datalist>
+        </form>
+    </body>
+</html>
